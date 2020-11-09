@@ -1,0 +1,43 @@
+@media only screen and (max-width: 650px) {
+    .logo{
+        width: 70%!important;
+    }
+
+    ::ng-deep .mat-menu-panel{
+        background: white;
+        color: black!important;
+        mat-icon{
+            color: black!important;
+        }
+        button{
+            color: black!important;
+        }
+    }
+}
+  
+
+.mat-toolbar{
+    font-family: 'Montserrat', sans-serif;
+
+    .spacer {
+        flex: 1 1 auto;
+      }
+
+      .navbar-item {
+          color: black;
+        //   margin-left: 1vw;
+          font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+
+        
+      }
+      .bordered{
+        border-radius: 20px;
+        background-color: #f09402!important;
+        color: white!important;
+        margin-right: 2vw;
+    }
+
+      
+}
+

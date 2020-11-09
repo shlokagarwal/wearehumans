@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "wearehumans-dev": {
+      "hosting": {
+        "we-are-humans": [
+          "wearehumans-dev"
+        ]
+      }
+    }
+  }
+}

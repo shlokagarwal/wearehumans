@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: IBMPlexSans-Light
+font link: https://fonts.google.com/specimen/IBM+Plex+Sans
+font author: Mike Abbink
+font author site: https://www.mikeabbink.com/
+
+
+icon designer: Ji Sub Jeong
+icon designer link: /james303
+        
+{"bg":"#FEF2E5","font":"#361C00","icon-gradient-0":"#EB4C00","icon-gradient-1":"#F2A900","slogan":"#4a3014"}
+      

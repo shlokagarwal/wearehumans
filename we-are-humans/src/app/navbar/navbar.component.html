@@ -1,0 +1,27 @@
+<mat-toolbar style="background: transparent!important;">
+    <!-- <span style="color: black;">We Are Humans</span> -->
+    <img class="logo" style="margin-left: 2vw;" src="../../assets/logofiles/vector/default-monochrome.svg"
+        alt="We Are Humans Logo">
+    <span class="spacer"></span>
+
+    <button *ngIf="isAMobile() === false" mat-button class="navbar-item">About</button>
+    <button *ngIf="isAMobile() === false" mat-button class="navbar-item">Giveaways Nearby</button>
+    <button *ngIf="isAMobile() === false" mat-button class="navbar-item bordered" color="warn">Contribute</button>
+    <button *ngIf="isAMobile() === true" style="color: black;" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Mobile Menu Button">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+        </button>
+        <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>
