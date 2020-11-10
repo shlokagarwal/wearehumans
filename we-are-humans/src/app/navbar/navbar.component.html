@@ -4,9 +4,9 @@
         alt="We Are Humans Logo">
     <span class="spacer"></span>
 
-    <button *ngIf="isAMobile() === false" mat-button class="navbar-item">About</button>
+    <button routerLink="/about" *ngIf="isAMobile() === false" mat-button class="navbar-item">About</button>
     <button *ngIf="isAMobile() === false" mat-button class="navbar-item">Giveaways Nearby</button>
-    <button *ngIf="isAMobile() === false" mat-button class="navbar-item bordered" color="warn">Contribute</button>
+    <button routerLink="/contribute" *ngIf="isAMobile() === false" mat-button class="navbar-item bordered" color="warn">Contribute</button>
     <button *ngIf="isAMobile() === true" style="color: black;" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Mobile Menu Button">
         <mat-icon>more_vert</mat-icon>
     </button>

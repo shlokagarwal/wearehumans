@@ -13,12 +13,15 @@ import {MatIconModule} from '@angular/material/icon';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import {AngularFireModule} from '@angular/fire';
 import {AuthenticationService} from './services/authentication.service';
-
+import { ContributeComponent } from './contribute/contribute.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDividerModule} from '@angular/material/divider';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    ContributeComponent
   ],
   imports: [
     BrowserModule,
@@ -26,8 +29,10 @@ import {AuthenticationService} from './services/authentication.service';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
+    MatDividerModule,
     MatMenuModule,
     MatIconModule,
+    MatExpansionModule,
     AngularFireModule.initializeApp({
       apiKey: 'AIzaSyAPuk6BpFQW3Z8WAgBSduC66kyO6nZ6B9A',
       authDomain: 'wearehumans-dev.firebaseapp.com',
