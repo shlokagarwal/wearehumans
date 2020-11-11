@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about', component: LandingpageComponent },
   { path: 'contribute', component: ContributeComponent },
+  { path: '**', redirectTo: '/about' }
 ];
 
 @NgModule({

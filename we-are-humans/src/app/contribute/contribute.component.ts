@@ -13,4 +13,9 @@ export class ContributeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  openGithub(): void {
+    window.open('https://github.com/shlokagarwal/wearehumans');
+  }
+
 }
