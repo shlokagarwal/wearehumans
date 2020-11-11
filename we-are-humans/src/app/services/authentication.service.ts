@@ -14,7 +14,7 @@ export class AuthenticationService {
     .then(res => {
       this.isLoggedIn = true;
       localStorage.setItem("user", JSON.stringify(res.user));
-      res.user.se
+      // res.user.se
     });
   }
 
@@ -30,7 +30,7 @@ export class AuthenticationService {
   logout(){
     this.firebaseAuth.signOut();
     localStorage.removeItem("user");
-    this.firebaseAuth.
+    // this.firebaseAuth.
   }
 
 }
