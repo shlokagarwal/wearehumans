@@ -1,0 +1,73 @@
+// ::ng-deep .cdk-overlay-pane{
+//     border: solid #f09402 3px;
+//     border-radius: 20px;
+// }
+
+
+::ng-deep .mat-dialog-container {
+    
+    background: white;
+    color: black;
+    border-radius: 20px;
+    border: solid #f09402 5px;
+
+
+    h1, h2, p, button{
+        font-family: 'Montserrat', sans-serif!important;
+    }
+
+    h2{
+        font-weight: 1000!important;
+        font-size: 30px;
+        color: #f09402;
+    }
+
+    .mat-tab-label{
+        color: black;
+    }
+
+    .mat-tab-header-pagination-chevron {
+        border-color: black;
+    }
+    
+}
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    padding-top: 16px;
+    // padding-top: 16px;
+    text-align: center;
+
+    button {
+        background-color: #f09402!important;
+    }
+  }
+
+  .forgot-password{
+      color: red;
+      cursor: pointer;
+      padding: 16px;
+      padding-bottom: 0px;
+  }
+
+  .create-account{
+    color: darkblue;
+    cursor: pointer;
+    padding: 16px;
+    padding-bottom: 0px;
+  
+}
+  
+  .example-full-width {
+   padding-top: 16px;
+    width: 70%;
+
+    button {
+        width: 100%;
+        font-weight: 1000!important;
+    }
+
+  }

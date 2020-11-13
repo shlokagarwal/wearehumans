@@ -2,19 +2,21 @@
 <h1 id="howcanicontribute" style="text-align: center;font-size: 50px;cursor: default;color: black;margin: 40px auto;">How can I contribute?</h1>
 <div class="choose-user-type">
 
-    <div class="choose-user-type-point" >
+    <div (click)="openDialog('donor')" class="choose-user-type-point" >
         <h1>You have stuff to giveaway.</h1>
         <img src="../../assets/2194208/shopping-2194208-0.svg">
     </div>
     <mat-divider style="background: black!important;height: 300px;margin: auto 0px;" vertical="true"></mat-divider>
-    <div class="choose-user-type-point">
+    <div (click)="openDialog('ngo')" class="choose-user-type-point">
         <h1>You are an NGO / Social Activist Group.</h1>
         <img src="../../assets/2194218/wife-giving-gifts-to-husband-2194218-0.svg">
     </div>
 </div>
 
+<!-- <button mat-button >Open dialog</button> -->
+
 <section class="curved" >
-    <h1 style="color: white;text-align: center;text-align: center;width: 100%;">If you are a developer</h1>
+    <h1 style="color: white;text-align: center;text-align: center;width: 100%;margin-top: 15px;">If you are a developer</h1>
     <img (click)="openGithub()"  class="github-logo" src="../../assets/githublogo.png">
     <h1 style="color: white;text-align: center;width: 100%;">You can contribute to the open source repository.</h1>
 </section>

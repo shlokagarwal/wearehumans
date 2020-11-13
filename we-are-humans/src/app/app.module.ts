@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
@@ -13,25 +14,37 @@ import {MatIconModule} from '@angular/material/icon';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import {AngularFireModule} from '@angular/fire';
 import {AuthenticationService} from './services/authentication.service';
-import { ContributeComponent } from './contribute/contribute.component';
+import { ContributeComponent, LoginDialogComponent } from './contribute/contribute.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
+// import {MatDialog} from '@angular/material/dialog';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatTabsModule} from '@angular/material/tabs';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LandingpageComponent,
-    ContributeComponent
+    ContributeComponent,
+    LoginDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
     MatDividerModule,
     MatMenuModule,
     MatIconModule,
+    MatDialogModule,
+    MatTabsModule,
+    MatInputModule,
     MatExpansionModule,
     AngularFireModule.initializeApp({
       apiKey: 'AIzaSyAPuk6BpFQW3Z8WAgBSduC66kyO6nZ6B9A',

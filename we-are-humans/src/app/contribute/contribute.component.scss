@@ -65,7 +65,8 @@ img {
 
   position: relative;
   background: #f09402;
-  height: 400px;
+  min-height: 400px;
+  max-height: fit-content;
   border-top-left-radius: 50% 12%;
   border-top-right-radius: 50% 12%;
   display: flex;
